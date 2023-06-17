@@ -12,6 +12,7 @@ tasks:
     dir: bootstrap/argocd
     cmds:
       - ./apply.sh
+      - kubectl apply -f ./ingress-argocd.yaml -n argocd
 
   bootstrap:root:
     internal: true
@@ -28,10 +29,6 @@ tasks:
       - helm install ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx --create-namespace --set controller.publishService.enabled=true
       - task: bootstrap
   
-  ingress-argo: 
-    cmds:
-      - kubectl apply -f ingress-argocd.yaml -n argocd
-
   dev:cleanup:
     cmds:
       - k3d cluster delete sandman
