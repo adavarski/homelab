@@ -33,11 +33,7 @@ task: Available tasks for this project:
 
 | ArgoCD |
 | :--: |
-| ![ArgoCD dashboard screenshot](images/argocd.png) |
-
-| Lens |
-| :--: |
-| ![Lens (Kubernetes dashboard screenshot)](images/lens.png) |
+| ![ArgoCD dashboard screenshot](docs/images/homelab-argocd.png) |
 
 ## Apps
 
