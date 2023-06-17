@@ -1,7 +1,7 @@
-site_name: Mark's Homelab
-site_author: Mark Bundschuh
+site_name: Homelab
+site_author: Anastas Davarski
 site_url: https://adavarski.github.io/homelab
-copyright: Copyright &copy; 2023 Mark Bundschuh
+copyright: Copyright &copy; 2023 Anastas Davarski
 site_description: >-
   Documentation concerning my homelab infrastructure. Fully automated
   Kubernetes and GitOps setup to host my important services.
