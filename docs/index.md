@@ -31,6 +31,8 @@ task: Available tasks for this project:
 
 ## Screenshots
 
+Browser: http://argocd.192.168.1.99.nip.io:8888
+
 | ArgoCD |
 | :--: |
 | ![ArgoCD dashboard screenshot](docs/images/homelab-argocd.png) |
