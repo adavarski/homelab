@@ -6,12 +6,28 @@ Read the [docs](https://adavarski.github.io/homelab) for technical details.
 
 ## Hardware
 
-
-- Dell Inspiron 7580
+HP Workstation
     - CPU: `8 x Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz`
-    - RAM: `8GB`
+    - RAM: `16GB`
     - SSD: `128GB`
     - HDD: `1TB`
+
+### Install needed apps:
+- kubectl
+- go-task
+- k3d
+- helm
+
+```
+### install tasks (like GNU make)
+$ sudo sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
+$ task --list-all
+task: Available tasks for this project:
+* bootstrap:                           
+* dev:                                 
+* dev:cleanup:                         
+* scripts:argocd-admin-password: 
+```
 
 ## Screenshots
 
