@@ -74,19 +74,6 @@ Browser: http://argocd.192.168.1.99.nip.io:8888
 | ![ArgoCD dashboard screenshot](docs/images/homelab-argocd.png) |
 
 
-#### Apps
-
-<table>
-    <tr>
-        <th>Logo</th> <th>Name</th> <th>Description</th>
-    </tr>
-    <tr>
-        <td><img src="https://docs.excalidraw.com/img/logo.svg" width="48">
-        <td><a href="https://docs.excalidraw.com">Excalidraw</a></td>
-        <td>Online whiteboard</td>
-    </tr>
-</table>
-
 ## Clean up
 
 Run the task `dev:cleanup` to clean up (delete the local test Kubernetes cluster)
