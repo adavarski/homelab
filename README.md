@@ -6,20 +6,20 @@ Read the [docs](https://adavarski.github.io/homelab) for technical details.
 
 ## Hardware
 
-- HP Workstation
+HP Workstation
     - CPU: `8 x Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz`
     - RAM: `16GB`
     - SSD: `128GB`
     - HDD: `1TB`
 
-Install:
+### Install needed apps:
 - kubectl
 - go-task
 - k3d
 - helm
 
 ```
-### install tasks (better than GNU make)
+### install tasks (like GNU make)
 $ sudo sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
 $ task --list-all
 task: Available tasks for this project:
