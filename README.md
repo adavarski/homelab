@@ -63,6 +63,7 @@ Get access to secrets by using some task scripts:
 
 ```bash
 task scripts:argocd-admin-password
+task scripts:grafana-admin-password:
 ```
 
 #### Screenshots
