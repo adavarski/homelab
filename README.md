@@ -6,7 +6,7 @@ Read the [docs](https://adavarski.github.io/homelab) for technical details.
 
 ## Hardware
 
-- Dell Inspiron 7580
+- HP Workstation
     - CPU: `8 x Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz`
     - RAM: `16GB`
     - SSD: `128GB`
