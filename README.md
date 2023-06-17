@@ -19,7 +19,7 @@ HP Workstation:
 Clone the repository
 
 ```sh
-git clone https://github.com/adavarski/homelab
+$ git clone https://github.com/adavarski/homelab
 ```
 
 ## Dependencies
@@ -49,7 +49,7 @@ task: Available tasks for this project:
 Run the task `dev` to fully bootstrap the development environment.
 
 ```bash
-task dev
+$ task dev
 ```
 
 After waiting ~5 minutes we should be able to reach the hosted services at `https://*.192.168.1.99.nip.io`, for example at [http://argocd.192.168.1.99.nip.io](https://argocd.192.168.1.99.nip.io).
@@ -63,8 +63,17 @@ Warning "Caveats"
 Get access to secrets by using some task scripts:
 
 ```bash
-task scripts:argocd-admin-password
-task scripts:grafana-admin-password:
+$ task scripts:argocd-admin-password
+$ task scripts:grafana-admin-password
+
+$ kubectl get ing --all-namespaces
+NAMESPACE    NAME                                    CLASS   HOSTS                            ADDRESS      PORTS   AGE
+argocd       argocd-ingress                          nginx   argocd.192.168.1.99.nip.io       172.28.0.2   80      99m
+monitoring   monitoring-grafana                      nginx   grafana.192.168.1.99.nip.io      172.28.0.2   80      93m
+element      element-elementweb                      nginx   chat.192.168.1.99.nip.io         172.28.0.2   80      93m
+excalidraw   excalidraw                              nginx   draw.192.168.1.99.nip.io         172.28.0.2   80      93m
+monitoring   monitoring-kube-prometheus-prometheus   nginx   prometheus.192.168.1.99.nip.io   172.28.0.2   80      93m
+
 ```
 
 #### Screenshots
@@ -84,6 +93,6 @@ Browser:
 Run the task `dev:cleanup` to clean up (delete the local test Kubernetes cluster)
 
 ```bash
-task dev:cleanup
+$ task dev:cleanup
 ```
 
