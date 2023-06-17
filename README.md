@@ -4,6 +4,8 @@ Fully automated Kubernetes and GitOps setup to host my important services at hom
 
 Note: We can use GitHub repos (`APPS repos`) and GitHub Actions (GitOps CI) to build docker images. Once CI execution is done, the artifact will be pushed (push containers images to docker registry & setup images tags in this `INFRA repo` apps folder: helm charts or k8s manifests + kustomize) and ArgoCD will be taking care of the CD -> Ref: https://github.com/adavarski/ArgoCD-GitOps-playground
 
+Note: Renovate watches this Git repository and creates pull requests (PRs) when it finds updates to Docker images, Helm charts, and other dependencies. 
+
 Read the [Docs](https://adavarski.github.io/homelab) for technical details.
 
 ### Hardware
