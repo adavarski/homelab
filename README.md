@@ -14,7 +14,7 @@ HP Workstation
 
 ### Install needed apps:
 - kubectl
-- go-task
+- [go-task](https://taskfile.dev/installation/)
 - k3d
 - helm
 
