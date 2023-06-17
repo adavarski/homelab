@@ -10,6 +10,7 @@ HP Workstation:
 - CPU: `8 x Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz`
 - RAM: `16GB`
 - SSD: `512GB`
+- IP: 192.168.1.99
 
 ## Getting Started
 
@@ -52,7 +53,7 @@ Run the task `dev` to fully bootstrap the development environment.
 task dev
 ```
 
-After waiting ~5 minutes you should be able to reach the hosted services at `https://*.192.168.1.99.nip.io`, for example at [http://argocd.127-0-0-1.nip.io](https://argocd.127-0-0-1.nip.io).
+After waiting ~5 minutes you should be able to reach the hosted services at `https://*.192.168.1.99.nip.io`, for example at [http://argocd.192.168.1.99.nip.io](https://argocd.192.168.1.99.nip.io).
 
 Warning "Caveats"
 
