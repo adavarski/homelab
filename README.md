@@ -13,10 +13,9 @@ HP Workstation:
 - HDD: `1TB`
 
 ### Install needed apps:
-- kubectl
-- [go-task](https://taskfile.dev/installation/)
-- k3d
-- helm
+- [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
+- [Go Task](https://taskfile.dev/installation)
+- [k3d](https://k3d.io/#installation) (only needed for development)
 
 ```
 ### install tasks (like GNU make)
