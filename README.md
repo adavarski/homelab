@@ -67,7 +67,10 @@ task scripts:argocd-admin-password
 
 #### Screenshots
 
-Browser: http://argocd.192.168.1.99.nip.io:8888
+Browser: 
+- ArgoCd: http://argocd.192.168.1.99.nip.io:8888
+- Prometheus: http://prometheus.192.168.1.99.nip.io:8888
+- Grafana: http://grafana.192.168.1.99.nip.io:8888
 
 | ArgoCD |
 | :--: |
