@@ -1,4 +1,4 @@
-# GitOps ArgoCD-based HomeLab Development Environment
+## GitOps ArgoCD-based HomeLab Development Environment
 
 Fully automated Kubernetes and GitOps setup to host my important services at home.
 
@@ -6,7 +6,7 @@ Note: We can use GitHub repos (`APPS repos`) and GitHub Actions (GitOps CI) to b
 
 Read the [Docs](https://adavarski.github.io/homelab) for technical details.
 
-## Hardware
+### Hardware
 
 HP server:
 - CPU: `8 x Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz`
@@ -14,7 +14,7 @@ HP server:
 - SSD: `512GB`
 - Server IP: `192.168.1.99`
 
-## Getting Started
+### Getting Started
 
 Clone the repository:
 
@@ -22,7 +22,7 @@ Clone the repository:
 $ git clone https://github.com/adavarski/homelab
 ```
 
-## Dependencies
+### Dependencies
 
 - [Go Task](https://taskfile.dev/installation)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
@@ -42,9 +42,9 @@ task: Available tasks for this project:
 * scripts:grafana-admin-password:
 ```
 
-## Develop
+### Develop
 
-### Bootstrap
+#### Bootstrap
 
 Run the task `dev` to fully bootstrap the development environment.
 
@@ -58,7 +58,7 @@ Warning "Caveats"
 
     - No persistent storage
 
-### Explore
+#### Explore
 
 Get access to secrets by using some task scripts:
 
@@ -88,7 +88,7 @@ Browser:
 | ![ArgoCD dashboard screenshot](docs/images/homelab-argocd.png) |
 
 
-## Clean up
+### Clean up
 
 Run the task `dev:cleanup` to clean up (delete the local test Kubernetes cluster)
 
