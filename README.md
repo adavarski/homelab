@@ -22,15 +22,12 @@ git clone https://github.com/adavarski/homelab
 
 ## Dependencies
 
-=== "Generic"
+- [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
+- [Go Task](https://taskfile.dev/installation)
+- [k3d](https://k3d.io/#installation) (only needed for development)
 
-    - Homelab
-        - [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
-        - [Go Task](https://taskfile.dev/installation)
-        - [k3d](https://k3d.io/#installation) (only needed for development)
-
-    - Docs
-        - Install [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/#latest) including [image processing dependencies](https://squidfunk.github.io/mkdocs-material/setup/dependencies/image-processing)
+ Docs
+- Install [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/#latest) including [image processing dependencies](https://squidfunk.github.io/mkdocs-material/setup/dependencies/image-processing)
 
 ```
 ### Install Go Task example ( task is like GNU make, but better)
