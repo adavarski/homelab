@@ -46,11 +46,6 @@ task: Available tasks for this project:
         <th>Logo</th> <th>Name</th> <th>Description</th>
     </tr>
     <tr>
-        <td><img src="https://raw.githubusercontent.com/toboshii/hajimari/main/assets/logo.png" width="48">
-        <td><a href="https://hajimari.io">Hajimari</a></td>
-        <td>Simplistic startpage for Kubernetes services</td>
-    </tr>
-    <tr>
         <td><img src="https://docs.excalidraw.com/img/logo.svg" width="48">
         <td><a href="https://docs.excalidraw.com">Excalidraw</a></td>
         <td>Online whiteboard</td>
