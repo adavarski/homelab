@@ -6,11 +6,11 @@ Read the [docs](https://adavarski.github.io/homelab) for technical details.
 
 ## Hardware
 
-HP Workstation
-    - CPU: `8 x Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz`
-    - RAM: `16GB`
-    - SSD: `128GB`
-    - HDD: `1TB`
+HP Workstation:
+- CPU: `8 x Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz`
+- RAM: `16GB`
+- SSD: `128GB`
+- HDD: `1TB`
 
 ### Install needed apps:
 - kubectl
