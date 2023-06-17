@@ -2,6 +2,8 @@
 
 Fully automated Kubernetes and GitOps setup to host my important services at home.
 
+Note: We can use GitHub repos (apps repos) and GitHub Actions (GitOps CI) to build docker images. Once CI execution is done, the artifact will be pushed (setup images tags @apps folder in this repo: helm charts or k8s manifests) to the apps folder in this repository (infra repo) and ArgoCD will be taking care of the CD. -> Ref: https://github.com/adavarski/ArgoCD-GitOps-playground
+
 Read the [docs](https://adavarski.github.io/homelab) for technical details.
 
 ## Hardware
@@ -93,5 +95,5 @@ Browser: http://argocd.192.168.1.99.nip.io:8888
     </tr>
 </table>
 
-Note1: We can use GitHub (apps repos) and GitHub Actions (GitOps CI) to build docker images and setup images tags @apps folder in this repo (helm charts or k8s manifests). Once CI execution is done, the artifact will be pushed to the apps folder in this repository (infra repo) and ArgoCD will be taking care of the CD. -> Ref: https://github.com/adavarski/ArgoCD-GitOps-playground
+
 
