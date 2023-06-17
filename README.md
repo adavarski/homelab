@@ -69,7 +69,7 @@ task scripts:grafana-admin-password:
 #### Screenshots
 
 Browser: 
-- ArgoCd: http://argocd.192.168.1.99.nip.io:8888
+- ArgoCD: http://argocd.192.168.1.99.nip.io:8888
 - Prometheus: http://prometheus.192.168.1.99.nip.io:8888
 - Grafana: http://grafana.192.168.1.99.nip.io:8888
 
