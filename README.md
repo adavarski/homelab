@@ -1,4 +1,4 @@
-# Homelab Development Environment
+# GitOps ArgoCD-based HomeLab Development Environment
 
 Fully automated Kubernetes and GitOps setup to host my important services at home.
 
@@ -26,8 +26,7 @@ git clone https://github.com/adavarski/homelab
 - [Go Task](https://taskfile.dev/installation)
 - [k3d](https://k3d.io/#installation) (only needed for development)
 
- Docs
-- Install [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/#latest) including [image processing dependencies](https://squidfunk.github.io/mkdocs-material/setup/dependencies/image-processing)
+ Note: Docs -> Install [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/#latest) including [image processing dependencies](https://squidfunk.github.io/mkdocs-material/setup/dependencies/image-processing)
 
 ```
 ### Install Go Task example ( task is like GNU make, but better)
@@ -93,3 +92,6 @@ Browser: http://argocd.192.168.1.99.nip.io:8888
         <td>Online whiteboard</td>
     </tr>
 </table>
+
+Note1: We can use GitHub (apps repos) and GitHub Actions (GitOps CI) to build docker images and setup images tags @apps folder in this repo (helm charts or k8s manifests). Once CI execution is done, the artifact will be pushed to the apps folder in this repository (infra repo) and ArgoCD will be taking care of the CD. -> Ref: https://github.com/adavarski/ArgoCD-GitOps-playground
+
