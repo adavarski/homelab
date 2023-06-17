@@ -4,14 +4,6 @@ Fully automated Kubernetes and GitOps setup to host my important services at hom
 
 Read the [docs](https://adavarski.github.io/homelab) for technical details.
 
-## Hardware
-
-HP Workstation
-    - CPU: `8 x Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz`
-    - RAM: `16GB`
-    - SSD: `128GB`
-    - HDD: `1TB`
-
 ### Install needed apps:
 - kubectl
 - [go-task](https://taskfile.dev/installation/)
