@@ -2,13 +2,13 @@
 
 Fully automated Kubernetes and GitOps setup to host my important services at home.
 
-Note: We can use GitHub repos (`APPS repos`) and GitHub Actions (GitOps CI) to build docker images. Once CI execution is done, the artifact will be pushed (setup images tags in this `INFRA repo` apps folder: helm charts or k8s manifests)  and ArgoCD will be taking care of the CD. -> Ref: https://github.com/adavarski/ArgoCD-GitOps-playground
+Note: We can use GitHub repos (`APPS repos`) and GitHub Actions (GitOps CI) to build docker images. Once CI execution is done, the artifact will be pushed (push containers images to docker registry & setup images tags in this `INFRA repo` apps folder: helm charts or k8s manifests + kustomize) and ArgoCD will be taking care of the CD -> Ref: https://github.com/adavarski/ArgoCD-GitOps-playground
 
-Read the [docs](https://adavarski.github.io/homelab) for technical details.
+Read the [Docs](https://adavarski.github.io/homelab) for technical details.
 
 ## Hardware
 
-HP Workstation:
+HP server:
 - CPU: `8 x Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz`
 - RAM: `16GB`
 - SSD: `512GB`
@@ -28,10 +28,10 @@ $ git clone https://github.com/adavarski/homelab
 - [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
 - [k3d](https://k3d.io/#installation) 
 
- Note: Docs -> Install [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/#latest) including [image processing dependencies](https://squidfunk.github.io/mkdocs-material/setup/dependencies/image-processing)
+ Note: repo Docs -> Install [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/#latest) including [image processing dependencies](https://squidfunk.github.io/mkdocs-material/setup/dependencies/image-processing)
 
 ```
-### Install Go Task example (Go Task is like GNU make, but better)
+### Go Task example (Go Task is like GNU make, but better)
 $ sudo sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
 $ task --list-all
 task: Available tasks for this project:
