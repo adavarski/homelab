@@ -39,6 +39,7 @@ task: Available tasks for this project:
 * dev:                                 
 * dev:cleanup:                         
 * scripts:argocd-admin-password: 
+* scripts:grafana-admin-password:
 ```
 
 ## Develop
