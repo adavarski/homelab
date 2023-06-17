@@ -1,0 +1,53 @@
+kube-prometheus-stack:
+  grafana:
+    adminPassword: null
+    defaultDashboardsEnabled: false
+    ingress:
+      enabled: true
+      ingressClassName: public
+      annotations:
+        cert-manager.io/cluster-issuer: letsencrypt-prod
+        external-dns.alpha.kubernetes.io/target: relay.192.168.1.99.nip.io
+        hajimari.io/appName: Grafana
+        hajimari.io/icon: chart-bar
+        hajimari.io/group: External
+      hosts:
+        - &host grafana.192.168.1.99.nip.io
+      tls:
+        - secretName: grafana-general-tls
+          hosts:
+            - *host
+    persistence:
+      enabled: true
+      storageClass: longhorn
+    additionalDataSources:
+      - name: Loki
+        type: loki
+        url: http://loki.loki:3100
+    grafana.ini:
+      server:
+        root_url: https://grafana.192.168.1.99.nip.io
+      auth.anonymous:
+        enabled: true
+
+  prometheus:
+    prometheusSpec:
+      ruleSelectorNilUsesHelmValues: false
+      serviceMonitorSelectorNilUsesHelmValues: false
+      podMonitorSelectorNilUsesHelmValues: false
+      probeSelectorNilUsesHelmValues: false
+    ingress:
+      enabled: true
+      ingressClassName: private
+      annotations:
+        cert-manager.io/cluster-issuer: letsencrypt-prod
+        external-dns.alpha.kubernetes.io/target: private-relay.192.168.1.99.nip.io
+        hajimari.io/appName: Prometheus
+        hajimari.io/icon: torch
+        hajimari.io/group: Internal
+      hosts:
+        - &host prometheus.192.168.1.99.nip.io
+      tls:
+        - secretName: prometheus-general-tls
+          hosts:
+            - *host

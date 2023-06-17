@@ -1,0 +1,40 @@
+hajimari:
+  ingress:
+    main:
+      enabled: true
+      ingressClassName: nginx
+      hosts:
+        - host: home.192.168.1.99.nip.io
+          paths:
+            - path: /
+              pathType: Prefix
+  hajimari:
+    showAppGroups: true
+    defaultEnable: true
+    namespaceSelector:
+      any: true
+    lightTheme: gazette
+    darkTheme: espresso
+    defaultSearchProvider: Searxng
+    searchProviders:
+      - name: Searxng
+        token: s
+        icon: mdi:search
+        searchUrl: https://home.192.168.1.99.nip.io/search?q={query}
+        url: https://home.192.168.1.99.nip.io
+    globalBookmarks:
+      - group: Homelab
+        bookmarks:
+          - name: Documentation
+            url: https://adavarski.github.io/homelab
+          - name: Public GitHub repository
+            url: https://github.com/adavarski/homelab
+      - group: Managed services
+        bookmarks:
+          - name: Cloudflare
+            url: https://dash.cloudflare.com
+          - name: Tailscale
+            url: https://tailscale.com/admin
+  persistence:
+    data:
+      enabled: false
