@@ -30,7 +30,7 @@ tasks:
 
   dev:cleanup:
     cmds:
-      - k3d cluster delete homelab-dev
+      - k3d cluster delete sandman
 
   scripts:argocd-admin-password:
     cmds:
