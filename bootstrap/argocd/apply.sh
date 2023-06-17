@@ -16,5 +16,3 @@ helm template \
 kubectl -n argocd wait --timeout=60s --for condition=Established \
        crd/applications.argoproj.io \
        crd/applicationsets.argoproj.io
-sleep 60       
-kubectl apply -f ingress.yaml -n argocd       
