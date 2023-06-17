@@ -16,7 +16,7 @@ HP Workstation:
 
 ## Getting Started
 
-Clone the repository
+Clone the repository:
 
 ```sh
 $ git clone https://github.com/adavarski/homelab
