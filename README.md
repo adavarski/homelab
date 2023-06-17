@@ -1,4 +1,4 @@
-# Adavarski Homelab :sailboat:
+# Adavarski Homelab:
 
 Fully automated Kubernetes and GitOps setup to host my important services at home.
 
