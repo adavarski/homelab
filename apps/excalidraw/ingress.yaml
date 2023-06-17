@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: &host draw.192.168.1.99.nip.io
+    - host: draw.192.168.1.99.nip.io
       http:
         paths:
           - pathType: ImplementationSpecific
