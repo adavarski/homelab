@@ -20,17 +20,13 @@ Install:
 
 ```
 ### install tasks (better than GNU make)
-sudo sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100  9634  100  9634    0     0  70321      0 --:--:-- --:--:-- --:--:-- 70321
-go-task/task info checking GitHub for latest tag
-go-task/task debug http_download https://github.com/go-task/task/releases/latest
-go-task/task info found version: 3.26.0 for v3.26.0/linux/amd64
-go-task/task debug downloading files into /tmp/tmp.NZlTHzebrR
-go-task/task debug http_download https://github.com/.../v3.26.0/task_linux_amd64.tar.gz
-go-task/task debug http_download https://github.com/.../download/v3.26.0/task_checksums.txt
-go-task/task info installed /usr/local/bin/task
+$ sudo sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
+$ task --list-all
+task: Available tasks for this project:
+* bootstrap:                           
+* dev:                                 
+* dev:cleanup:                         
+* scripts:argocd-admin-password: 
 ```
 
 ## Screenshots
