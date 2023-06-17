@@ -65,15 +65,7 @@ Get access to secrets by using some task scripts:
 task scripts:argocd-admin-password
 ```
 
-## Clean up
-
-Run the task `dev:cleanup` to clean up (delete the local test Kubernetes cluster)
-
-```bash
-task dev:cleanup
-```
-
-## Screenshots
+#### Screenshots
 
 Browser: http://argocd.192.168.1.99.nip.io:8888
 
@@ -82,7 +74,7 @@ Browser: http://argocd.192.168.1.99.nip.io:8888
 | ![ArgoCD dashboard screenshot](docs/images/homelab-argocd.png) |
 
 
-## Apps
+#### Apps
 
 <table>
     <tr>
@@ -95,5 +87,11 @@ Browser: http://argocd.192.168.1.99.nip.io:8888
     </tr>
 </table>
 
+## Clean up
 
+Run the task `dev:cleanup` to clean up (delete the local test Kubernetes cluster)
+
+```bash
+task dev:cleanup
+```
 
