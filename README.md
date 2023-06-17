@@ -26,7 +26,7 @@ git clone https://github.com/adavarski/homelab
 
 - [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
 - [Go Task](https://taskfile.dev/installation)
-- [k3d](https://k3d.io/#installation) (only needed for development)
+- [k3d](https://k3d.io/#installation) 
 
  Note: Docs -> Install [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/#latest) including [image processing dependencies](https://squidfunk.github.io/mkdocs-material/setup/dependencies/image-processing)
 
