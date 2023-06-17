@@ -12,7 +12,7 @@ HP Workstation:
 - CPU: `8 x Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz`
 - RAM: `16GB`
 - SSD: `512GB`
-- IP: 192.168.1.99
+- Server IP: `192.168.1.99`
 
 ## Getting Started
 
