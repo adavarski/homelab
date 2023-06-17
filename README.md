@@ -24,14 +24,14 @@ git clone https://github.com/adavarski/homelab
 
 ## Dependencies
 
-- [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
 - [Go Task](https://taskfile.dev/installation)
+- [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
 - [k3d](https://k3d.io/#installation) 
 
  Note: Docs -> Install [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/#latest) including [image processing dependencies](https://squidfunk.github.io/mkdocs-material/setup/dependencies/image-processing)
 
 ```
-### Install Go Task example ( task is like GNU make, but better)
+### Install Go Task example (Go Task is like GNU make, but better)
 $ sudo sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
 $ task --list-all
 task: Available tasks for this project:
@@ -51,7 +51,7 @@ Run the task `dev` to fully bootstrap the development environment.
 task dev
 ```
 
-After waiting ~5 minutes you should be able to reach the hosted services at `https://*.192.168.1.99.nip.io`, for example at [http://argocd.192.168.1.99.nip.io](https://argocd.192.168.1.99.nip.io).
+After waiting ~5 minutes we should be able to reach the hosted services at `https://*.192.168.1.99.nip.io`, for example at [http://argocd.192.168.1.99.nip.io](https://argocd.192.168.1.99.nip.io).
 
 Warning "Caveats"
 
