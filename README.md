@@ -66,7 +66,10 @@ Get access to secrets by using some task scripts:
 ```bash
 $ task scripts:argocd-admin-password
 $ task scripts:grafana-admin-password
+```
+Ingress:
 
+```bash
 $ kubectl get ing --all-namespaces
 NAMESPACE    NAME                                    CLASS   HOSTS                            ADDRESS      PORTS   AGE
 argocd       argocd-ingress                          nginx   argocd.192.168.1.99.nip.io       172.28.0.2   80      99m
