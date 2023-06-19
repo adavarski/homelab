@@ -90,7 +90,9 @@ Browser:
 | ArgoCD |
 | :--: |
 | ![ArgoCD dashboard screenshot](docs/images/homelab-argocd.png) |
-
+| Grafana |
+| :--: |
+| ![Grafana dashboard screenshot](docs/images/homelab-grafana.png) |
 
 ### Clean up
 
