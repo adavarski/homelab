@@ -57,7 +57,7 @@ Run the task `dev` to fully bootstrap the development environment.
 $ task dev
 ```
 
-After waiting ~5 minutes we should be able to reach the hosted services at `https://*.192.168.1.99.nip.io`, for example at [http://argocd.192.168.1.99.nip.io](https://argocd.192.168.1.99.nip.io).
+After waiting ~5 minutes we should be able to reach the hosted services at `https://*.192.168.1.99.nip.io:8888`, for example at [http://argocd.192.168.1.99.nip.io:8888](https://argocd.192.168.1.99.nip.io:8888).
 
 Warning "Caveats"
 
