@@ -94,7 +94,6 @@ Browser:
 | Prometheus |
 | ![Grafana dashboard screenshot](docs/images/homelab-prometheus.png) |
 | Grafana |
-| :--: |
 | ![Grafana dashboard screenshot](docs/images/homelab-grafana.png) |
 
 ### Clean up
