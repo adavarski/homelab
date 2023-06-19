@@ -33,15 +33,8 @@ $ git clone https://github.com/adavarski/homelab
  Note: repo Docs -> Install [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/#latest) including [image processing dependencies](https://squidfunk.github.io/mkdocs-material/setup/dependencies/image-processing)
 
 ```
-### Go Task example (Go Task as a more modern iteration of the Makefile utility)
+### Go Task (Go Task as a more modern iteration of the Makefile utility)
 $ sudo sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
-$ task --list-all
-task: Available tasks for this project:
-* bootstrap:                           
-* dev:                                 
-* dev:cleanup:                         
-* scripts:argocd-admin-password: 
-* scripts:grafana-admin-password:
 ```
 
 ### Develop
@@ -54,7 +47,7 @@ Run the task `dev` to fully bootstrap the development environment.
 $ task dev
 ```
 
-After waiting ~5 minutes we should be able to reach the hosted services at `https://*.192.168.1.99.nip.io:8888`, for example at [http://argocd.192.168.1.99.nip.io:8888](https://argocd.192.168.1.99.nip.io:8888).
+After waiting ~5 minutes we should be able to reach the hosted services at `http://*.192.168.1.99.nip.io:8888`, for example at [http://argocd.192.168.1.99.nip.io:8888](https://argocd.192.168.1.99.nip.io:8888).
 
 Warning "Caveats"
 
@@ -65,10 +58,17 @@ Warning "Caveats"
 Get access to secrets by using some task scripts:
 
 ```bash
+$ task --list-all
+task: Available tasks for this project:
+* bootstrap:                           
+* dev:                                 
+* dev:cleanup:                         
+* scripts:argocd-admin-password: 
+* scripts:grafana-admin-password:
 $ task scripts:argocd-admin-password
 $ task scripts:grafana-admin-password
 ```
-Ingress:
+Ingresses:
 
 ```bash
 $ kubectl get ing --all-namespaces
