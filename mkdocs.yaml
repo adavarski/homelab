@@ -77,7 +77,6 @@ nav:
   - Home: index.md
   - Installation:
       - installation/development-evironment.md
-      - installation/production.md
   - Reference:
       - reference/technical-overview.md
       - reference/architecture.md
