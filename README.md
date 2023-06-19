@@ -36,7 +36,7 @@ $ git clone https://github.com/adavarski/homelab
  Note: repo Docs -> Install [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/#latest) including [image processing dependencies](https://squidfunk.github.io/mkdocs-material/setup/dependencies/image-processing)
 
 ```
-### Go Task example (Go Task is like GNU make, but better)
+### Go Task example (Go Task as a more modern iteration of the Makefile utility)
 $ sudo sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
 $ task --list-all
 task: Available tasks for this project:
