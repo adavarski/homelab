@@ -25,6 +25,7 @@ $ git clone https://github.com/adavarski/homelab
 
 ### Dependencies
 
+- [Docker](https://docs.docker.com/engine/install/ubuntu/)
 - [Go Task](https://taskfile.dev/installation)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
 - [k3d](https://k3d.io/#installation) 
