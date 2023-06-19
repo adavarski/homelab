@@ -77,12 +77,4 @@ nav:
   - Home: index.md
   - Installation:
       - installation/development-evironment.md
-  - Reference:
-      - reference/technical-overview.md
-      - reference/architecture.md
-      - reference/alternatives.md
-      - reference/tailscale.md
-      - reference/longhorn.md
-      - reference/matrix.md
-      - reference/relay.md
-      - reference/k3sup.md
+
