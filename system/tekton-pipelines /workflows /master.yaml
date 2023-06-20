@@ -14,7 +14,7 @@ spec:
         # TODO Gitea doesn't have refs/head/ prefix, use gitRef after this is fixed
         # https://github.com/tektoncd/experimental/blob/3644c43377239bb639ec4191acc04fcf3aafb3f2/workflows/pkg/filters/filters.go#L44-L46
         gitRef:
-          regex: '^master$'
+          regex: '^main$'
         # custom:
         #   - cel: "body.ref.matches('^master$')"
       bindings:
@@ -27,7 +27,7 @@ spec:
       # TODO don't need default, but invalid mem address if remove this
       default: https://git.khuedoan.com/foo/bar
     - name: git_revision
-      default: master
+      default: main
   pipelineRef:
     resolver: git
     params:
