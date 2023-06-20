@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: tekton-ingress
+  namespace: tekton-pipelines
+spec:
+  rules:
+  - host: "tekton.192.168.1.99.nip.io"
+    http:
+      paths:
+      - path: "/"
+        pathType: Prefix
+        backend:
+          service:
+            name: tekton-dashboard
+            port:
+              number: 9097
