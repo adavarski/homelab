@@ -1,6 +1,4 @@
 ## GitOps ArgoCD-based HomeLab Development Environment
-[![pages-build-deployment](https://github.com/adavarski/homelab/workflows/pages-build-deployment/badge.svg)](https://github.com/adavarski/homelab/actions)
-
 
 Fully automated Kubernetes and GitOps setup to host my important services at home.
 
