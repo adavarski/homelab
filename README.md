@@ -107,4 +107,9 @@ Run the task `dev:cleanup` to clean up (delete the local test Kubernetes cluster
 ```bash
 $ task dev:cleanup
 ```
+### TODO
+- Fix Tekton app
+- Add HashiCorp Vault + k8s External, based on https://github.com/adavarski/k8s-vault-secrets#demo3-eso-external-secret-operato
+- Add SOPS 
+
 
