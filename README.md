@@ -110,6 +110,6 @@ $ task dev:cleanup
 ### TODO
 - Fix system:tekton-pipelines (Tekton CI)
 - Add HashiCorp Vault + k8s External, based on https://github.com/adavarski/k8s-vault-secrets#demo3-eso-external-secret-operato
-- Add SOPS 
+- Add SOPS (Secrets with Kustomize and SOPS: https://cloud.redhat.com/blog/a-guide-to-gitops-and-secret-management-with-argocd-operator-and-sops)
 
 
