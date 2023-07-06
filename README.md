@@ -111,5 +111,6 @@ $ task dev:cleanup
 - Fix system:tekton-pipelines (Tekton CI)
 - Add HashiCorp Vault + k8s External, based on https://github.com/adavarski/k8s-vault-secrets#demo3-eso-external-secret-operato
 - Add SOPS (Secrets with Kustomize and SOPS: https://cloud.redhat.com/blog/a-guide-to-gitops-and-secret-management-with-argocd-operator-and-sops)
+- helm install ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx --create-namespace --set controller.publishService.enabled=true --wait
 
-
+Note: ssl passthrough has to be enabled for argocd grpc to work. The configuration provided for split ingress in argocd documentation doesn't work. UI login is successfull. However cli login doesn't work -> Argo CLI : `helm upgrade ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx --create-namespace --set controller.publishService.enabled=true --set controller.extraArgs.enable-ssl-passthrough=true`
